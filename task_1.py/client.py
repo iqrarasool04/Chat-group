@@ -8,7 +8,7 @@ class Client:
         self.server_host = server_host
         self.server_port = server_port
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        self.socket.bind(('0.0.0.0', 0))  # Bind to a random available port
+        self.socket.bind(('0.0.0.0', 0))  
         self.middleware = None
 
     def connection(self):
